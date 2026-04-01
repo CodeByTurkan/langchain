@@ -8,16 +8,16 @@ const modal = new ChatOpenAI({
 });
 
 async function runModal() {
-  // const input = await modal.invoke("Give me 4 good books to read");
-  // console.log(input.content);
-//   const input = await modal.batch([
+  // const input1 = await modal.invoke("Give me 4 good books to read");
+  // console.log(input1.content);
+//   const input2 = await modal.batch([
 //     "hello",
 //     "give me 3 author that worth to read",
 //   ]);
-    //   console.log(input);
+    //   console.log(input2);
     
-    const input = await modal.stream("give me 3 author that worth to read");
-    for await (const chunk of input)
+    const input3 = await modal.stream("give me 3 author that worth to read");
+    for await (const chunk of input3)
         console.log(chunk.content);
         
 }
