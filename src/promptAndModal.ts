@@ -29,13 +29,11 @@ async function createPromptWithMessage() {
     ["system", "write a short description for a follwing product:"],
     ["human", "{product_name}"],
   ]);
-    
-    const chain = prompt.pipe(modal);
-    const response2 = await chain.invoke({
-        product_name: 'car'
-    })
-    console.log(response2.content);
-    
 
+  const chain = prompt.pipe(modal);
+  const response2 = await chain.invoke({
+    product_name: "car",
+  });
+  console.log(response2.content);
 }
-createPromptWithMessage()
+createPromptWithMessage();
