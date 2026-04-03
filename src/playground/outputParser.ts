@@ -54,5 +54,7 @@ async function structureParser() {
     phrase: "turkan likes pineapple",
   });
   console.log(response);
+
+  
 }
 structureParser();
