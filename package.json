@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r ts-node/register --env-file=.env src/rag/withPDFLoader.ts"
+    "start": "node -r ts-node/register --env-file=.env src/rag/withChromadbPDF.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,8 @@
     "@langchain/core": "^1.1.38",
     "@langchain/openai": "^1.4.1",
     "cheerio": "^1.2.0",
-    "dotenv": "^17.3.1",
+    "chromadb": "^3.4.0",
+    "dotenv": "^16.4.5",
     "langchain": "^1.2.39",
     "openai": "^6.25.0",
     "pdf-parse": "^1.1.4",
